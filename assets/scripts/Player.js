@@ -94,6 +94,10 @@ cc.Class({
 
         // 根据当前速度更新主角的位置
         this.node.x += this.xSpeed * dt;
+        if(this.node.x<=-600){
+            this.xSpeed=-this.xSpeed}
+        if(this.node.x>=600){
+            this.xSpeed=-this.xSpeed}
     },
 });
 
